@@ -208,6 +208,11 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor \
     android.hardware.keymaster@4.0.vendor
 
+# Configure hwui renderer and renderengine backend
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.hwui.use_vulkan=true \
+    debug.renderengine.backend=skiaglthreaded
+
 # Dependencies
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
