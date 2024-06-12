@@ -334,7 +334,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.usb.use_ffs_mtp=1
+    ro.usb.uvc.enabled=true \
+    vendor.usb.use_ffs_mtp=1 \
     sys.usb.mtp.batchcancel=1
 
 # WiFi
