@@ -335,8 +335,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.uvc.enabled=true \
+    vendor.usb.controller=a600000.dwc3 \
     vendor.usb.use_ffs_mtp=1 \
-    sys.usb.mtp.batchcancel=1
+    sys.usb.mtp.batchcancel=1 \
+    vendor.usb.use_gadget_hal=1
 
 # WiFi
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
