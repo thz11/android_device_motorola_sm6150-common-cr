@@ -332,6 +332,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true
 
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.usb.use_ffs_mtp=1
+    sys.usb.mtp.batchcancel=1
+
 # WiFi
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     config.disable_rtt=true
