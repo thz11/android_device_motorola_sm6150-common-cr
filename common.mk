@@ -208,7 +208,8 @@ PRODUCT_PACKAGES += \
 # Dependencies
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libutils.vendor
 
 # Display
 PRODUCT_PACKAGES += \
@@ -410,6 +411,8 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
     libprotobuf-cpp-full \
     librmnetctl \
+    libsqlite.vendor \
+    libsysutils.vendor \
     libxml2
 
 PRODUCT_PACKAGES += \
@@ -420,7 +423,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
     android.hardware.secure_element@1.1.vendor \
-    android.hardware.secure_element@1.0.vendor
+    android.hardware.secure_element@1.0.vendor \
+    libnetutils.vendor
 
 # Vendor libstdc++
 PRODUCT_PACKAGES += \
@@ -468,8 +472,8 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.mock
 
 # Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.trust@1.0-service
 
 # Update engine
 PRODUCT_PACKAGES += \
