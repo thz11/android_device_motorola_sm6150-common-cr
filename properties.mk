@@ -16,8 +16,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.sdk.ssr=false \
     vendor.audio.adm.buffering.ms=2 \
     vendor.audio.cts.media=false \
-    vendor.audio.dolby.ds2.enabled=false \
-    vendor.audio.dolby.ds2.hardbypass=false \
     vendor.audio.enable.mirrorlink=false \
     vendor.audio.flac.sw.decoder.24bit=true \
     vendor.audio.hal.output.suspend.supported=true \
@@ -169,6 +167,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.use_smooth_motion=1 \
     vendor.display.disable_offline_rotator=1 \
     vendor.display.disable_hw_recovery_dump=1
+
+# Dolby
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio_fx.current=dolby \
+    vendor.audio.dolby.ds2.enabled=true \
+    vendor.audio.dolby.ds2.hardbypass=true \
+    ro.vendor.audio.dolby.dax.support=true \
+    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
