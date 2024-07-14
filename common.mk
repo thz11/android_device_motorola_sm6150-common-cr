@@ -113,6 +113,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.bluetooth.audio-impl \
+    android.hardware.audio.sounddose-vendor-impl\
     audio.bluetooth.default \
     audio.primary.sm6150 \
     audio.r_submix.default \
@@ -127,7 +128,9 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libvolumelistener \
     tinymix \
-    libtinycompress
+    libtinycompress \
+    libaudioroute.vendor\
+    libstagefright_softomx_plugin.vendor
 
 ifeq ($(filter %_liber %_parker,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
