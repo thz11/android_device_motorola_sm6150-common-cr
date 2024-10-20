@@ -154,6 +154,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+QCOM_BOARD_PLATFORMS += sm6150
+TARGET_BOARD_PLATFORM := sm6150
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     liba2dpoffload \
