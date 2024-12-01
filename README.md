@@ -1,4 +1,4 @@
-Copyright 2021 - The LineageOS Project
+Copyright 2024 - The LineageOS Project
 
 Device configuration for Motorola SM6150 Devices
 ======================================
